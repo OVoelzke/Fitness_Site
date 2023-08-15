@@ -1,0 +1,803 @@
+.menu-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+a:link,
+a:visited {
+    background-color: transparent;
+    color: white;
+    border: 3px solid transparent;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: transparent;
+    color: rgb(4, 245, 4);
+    border: 3px solid rgb(4, 245, 4);
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+}
+
+.header-image {
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    width: 100%;
+    height: 110%;
+    border: 3px solid rgb(4, 245, 4);
+    object-fit: cover;
+}
+
+.header-image1 {
+    position: absolute;
+    top: 555%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(4, 245, 4);
+    background-image: url(img/INDOOR-CYCLING-7_1400x600.jpg);
+    background-size: 100% 100%;
+    object-fit: cover;
+    filter: brightness(1.0)
+}
+
+.logo {
+    position: absolute;
+    left: 10%;
+    top: 11%;
+    height: 75%;
+    width: 80%;
+}
+
+.logo1 {
+    position: absolute;
+    left: 43.5%;
+    top: 543.5%;
+    width: 13%;
+    height: 40%;
+}
+
+.logo2 {
+    position: absolute;
+    left: 0%;
+    top: 110%;
+    height: 165%;
+    width: 100%;
+}
+
+.logo3 {
+    position: absolute;
+    left: 0%;
+    top: 655%;
+    width: 100%;
+    height: 85%;
+}
+
+.logo4 {
+    position: absolute;
+    left: 0%;
+    top: 925%;
+    width: 100%;
+    height: 70%;
+}
+
+.logo5 {
+    position: absolute;
+    left: 0%;
+    top: 1080%;
+    width: 100%;
+    height: 60%;
+}
+
+.logo6 {
+    position: absolute;
+    left: 0%;
+    top: 274%;
+    width: 100%;
+    height: 281%;
+}
+
+.logo7 {
+    position: absolute;
+    left: 0%;
+    top: 740%;
+    width: 100%;
+    height: 186%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.conic {
+    position: absolute;
+    z-index: 0;
+    left: 1%;
+    top: 2%;
+    width: 20%;
+    height: 40%;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 2rem;
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        left: -50%;
+        top: -50%;
+        width: 200%;
+        height: 200%;
+        background-color: rgb(4, 245, 4);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-image: conic-gradient(transparent, white, transparent 30%);
+        animation: rotate 4s linear infinite;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 6px;
+        top: 6px;
+        width: calc(100% - 12px);
+        height: calc(100% - 12px);
+        background: #000;
+        border-radius: 5px;
+    }
+}
+
+.conic-demo::after {
+    animation: opacityChange 5s infinite linear;
+}
+
+@keyframes opacityChange {
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.conic1 {
+    position: absolute;
+    z-index: 0;
+    left: 42%;
+    top: 548%;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 2rem;
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        left: -50%;
+        top: -50%;
+        width: 200%;
+        height: 200%;
+        background-color: rgb(4, 245, 4);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-image: conic-gradient(transparent, white, transparent 30%);
+        animation: rotate 4s linear infinite;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 6px;
+        top: 6px;
+        width: calc(100% - 12px);
+        height: calc(100% - 12px);
+        background: #000;
+        border-radius: 5px;
+    }
+}
+
+.conic-demo::after {
+    animation: opacityChange 5s infinite linear;
+}
+
+@keyframes opacityChange {
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    position: absolute;
+    left: 55%;
+    top: 9%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.container1 {
+    position: absolute;
+    top: 212%;
+    left: 4.7%;
+    display: flex;
+    width: 89%;
+    padding: 2% 2%;
+    box-sizing: border-box;
+    height: 70vh;
+}
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+    line-height: 0;
+}
+
+.box>img {
+    width: 100%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: .5s;
+}
+
+.box>span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 5vh;
+    line-height: 2.6;
+}
+
+.box:hover {
+    flex: 1 1 50%;
+}
+
+.box:hover>img {
+    width: 80%;
+    height: 80%;
+}
+
+.gallery {
+    position: absolute;
+    top: 107%;
+    left: 0%;
+    width: 100%;
+    height: 15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    grid-column: 1 / -1;
+    gap: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(4, 245, 4)
+}
+
+.headline {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    font-size: 45px;
+    color: rgb(4, 245, 4);
+}
+
+.headline4 {
+    position: absolute;
+    left: 8.5%;
+    top: 660%;
+}
+
+.headline5 {
+    position: absolute;
+    font-size: 15px;
+    left: 9%;
+    top: 950%;
+    color: white;
+    line-height: 120%;
+}
+
+.arrow {
+    position: absolute;
+    left: 52%;
+    top: 90%;
+}
+
+.whatsapp-btn-container {
+    position: fixed;
+    top: 80%;
+    left: 92%;
+    opacity: 0;
+    bottom: -50px;
+    padding: 25px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+    font-size: 45px;
+    color: #25d366;
+    display: inline-block;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp-btn-container span {
+    position: absolute;
+    top: -5px;
+    left: 18px;
+    font-family: "Bitter", cursive;
+    font-weight: bold;
+    color: rgb(4, 245, 4);
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover+span {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+}
+
+.trainerzeiten1 {
+    position: absolute;
+    top: 130%;
+    left: 8.5%;
+}
+
+.trainerzeiten01 {
+    position: absolute;
+    top: 142%;
+    left: 8.5%;
+    line-height: 150%
+}
+
+.öffnungszeiten1 {
+    position: absolute;
+    top: 160%;
+    left: 8.5%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0, );
+    background-image: url(img/background.png);
+    background-size: 100% 100%;
+}
+
+.öffnungszeiten01 {
+    position: absolute;
+    top: 166%;
+    left: 12%;
+}
+
+.öffnungszeiten2 {
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/background.png);
+    background-size: 100% 100%;
+}
+
+.öffnungszeiten02 {
+    position: absolute;
+    top: 166%;
+    left: 53.5%;
+}
+
+.perfekte-welt {
+    position: absolute;
+    top: 283%;
+    left: 8.5%;
+    line-height: 150%
+}
+
+.joga1 {
+    position: absolute;
+    top: 335%;
+    left: 8.5%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/YOGA-01_1400x600.jpg);
+    background-size: 100% 100%;
+}
+
+.joga01 {
+    position: absolute;
+    top: 365%;
+    left: 12.5%;
+}
+
+.ausdauer1 {
+    position: absolute;
+    top: 335%;
+    left: 50%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/AUSDAUER-18_1400x600-1.jpg);
+    background-size: 100% 100%;
+}
+
+.ausdauer01 {
+    position: absolute;
+    top: 365%;
+    left: 53.5%;
+}
+
+.muskeln1 {
+    position: absolute;
+    top: 388%;
+    left: 8.5%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/KRAFTTRAINING-15_1400x600.jpg);
+    background-size: 100% 100%;
+}
+
+.muskeln01 {
+    position: absolute;
+    top: 418%;
+    left: 12.5%;
+}
+
+.cycling1 {
+    position: absolute;
+    top: 388%;
+    left: 50%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/INDOOR-CYCLING-7_1400x600.jpg);
+    background-size: 100% 100%;
+}
+
+.cycling01 {
+    position: absolute;
+    top: 418%;
+    left: 53.5%;
+}
+
+.boxen1 {
+    position: absolute;
+    top: 441%;
+    left: 8.5%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/INDOOR-CYCLING-7_1400x600.jpg);
+    background-size: 100% 100%;
+}
+
+.boxen01 {
+    position: absolute;
+    top: 471%;
+    left: 12.5%;
+}
+
+.ptraining1 {
+    position: absolute;
+    top: 441%;
+    left: 50%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/personalTRAINING-20_1400x600.jpg);
+    background-size: 100% 100%;
+}
+
+.ptraining01 {
+    position: absolute;
+    top: 471%;
+    left: 53.5%;
+}
+
+.gfitness1 {
+    position: absolute;
+    top: 494%;
+    left: 8.5%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/group_fitness.jpg);
+    background-size: 100% 100%;
+}
+
+.gfitness01 {
+    position: absolute;
+    top: 524%;
+    left: 12.5%;
+}
+
+.ftraining1 {
+    position: absolute;
+    top: 494%;
+    left: 50%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/FUNCTIONAL-TRAINING-07_1400x600.jpg);
+    background-size: 100% 100%;
+}
+
+.ftraining01 {
+    position: absolute;
+    top: 524%;
+    left: 53.5%;
+}
+
+.angebot1 {
+    position: absolute;
+    left: 8.5%;
+    top: 684%;
+    color: rgb(255, 255, 255);
+}
+
+.angebot2 {
+    position: absolute;
+    left: 55%;
+    top: 684%;
+    color: rgb(255, 255, 255);
+}
+
+.tarife {
+    position: absolute;
+    left: 8.5%;
+    top: 740%;
+    color: rgb(255, 255, 255);
+}
+
+.zwölfm1 {
+    position: absolute;
+    top: 755%;
+    left: 8.5%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/background.png);
+    background-size: 100% 100%;
+}
+
+.zwölfm01 {
+    position: absolute;
+    top: 760%;
+    left: 12.5%;
+}
+
+.zwölfm2 {
+    position: absolute;
+    top: 765%;
+    left: 12.5%;
+    color: rgb(255, 255, 255);
+}
+
+.vierundzwanzigm1 {
+    position: absolute;
+    top: 755%;
+    left: 50%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/background.png);
+    background-size: 100% 100%;
+}
+
+.vierundzwanzigm01 {
+    position: absolute;
+    top: 760%;
+    left: 53.5%;
+}
+
+.vierundzwanzigm2 {
+    position: absolute;
+    top: 765%;
+    left: 53.5%;
+    color: rgb(255, 255, 255);
+}
+
+.schüler1 {
+    position: absolute;
+    top: 808%;
+    left: 8.5%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/background.png);
+    background-size: 100% 100%;
+}
+
+.schüler01 {
+    position: absolute;
+    top: 813%;
+    left: 12.5%;
+}
+
+.schüler2 {
+    position: absolute;
+    top: 818%;
+    left: 12.5%;
+    color: rgb(255, 255, 255);
+}
+
+.button {
+    position: absolute;
+    left: 43%;
+    top: 66%;
+    font-size: 20px;
+    color: rgb(4, 245, 4);
+}
+
+.button2 {
+    position: absolute;
+    left: -11.5%;
+    top: 100%;
+    font-size: 15px;
+}
+
+.button3 {
+    position: absolute;
+    left: -11.5%;
+    top: 100%;
+    font-size: 15px;
+}
+
+.button5 {
+    position: absolute;
+    left: -1.1%;
+    top: 110%;
+    font-size: 15px;
+}
+
+.schüler3 {
+    position: absolute;
+    top: 808%;
+    left: 50%;
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/background.png);
+    background-size: 100% 100%;
+}
+
+.schüler03 {
+    position: absolute;
+    top: 813%;
+    left: 53.5%;
+}
+
+.schüler4 {
+    position: absolute;
+    top: 818%;
+    left: 53.5%;
+    color: rgb(255, 255, 255);
+}
+
+.tageskarte1 {
+    position: absolute;
+    top: 861%;
+    left: 8.5%;
+    width: 40%;
+    height: 54%;
+    border: 3px solid rgb(4, 245, 4);
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/background.png);
+    background-size: 100% 100%;
+}
+
+.tageskarte01 {
+    position: absolute;
+    top: 866%;
+    left: 12.5%;
+}
+
+.test {
+    position: absolute;
+    top: 95%;
+    left: -25%;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.image {
+    position: absolute;
+    left: 55%;
+    top: 935%;
+    height: 50%;
+    width: 35%;
+}
+
+.google {
+    position: absolute;
+    left: 0%;
+    top: 992.5%;
+}
+
+.impressum1 {
+    position: absolute;
+    top: 1090%;
+    left: 8.5%;
+    color: rgb(206, 200, 200);
+    font-size: 15px
+}
+
+.impressum2 {
+    position: absolute;
+    top: 1090%;
+    left: 50%;
+    color: rgb(206, 200, 200);
+    font-size: 15px;
+    text-align: right;
+}
+
+.impressum3 {
+    position: absolute;
+    top: 1090%;
+    left: 73.5%;
+    color: rgb(206, 200, 200);
+    font-size: 15px;
+    text-align: right;
+}
+
+.impressum4 {
+    position: absolute;
+    top: 1130%;
+    left: 17.5%;
+    color: rgb(206, 200, 200);
+    font-size: 15px;
+    text-align: right;
+}
